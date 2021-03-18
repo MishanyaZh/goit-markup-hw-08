@@ -1,0 +1,45 @@
+/* filter-buttton */
+
+.filter-buttton {
+  padding-top: 94px;
+}
+
+.filter-buttton__list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  background-color: var(--section-bg-color);
+  color: var(--title-text-color);
+  border: none;
+  border-radius: 4px;
+  // cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+
+  padding: 6px 22px;
+
+  transition: color 250ms var(--anim-func), background-color 250ms var(--anim-func), box-shadow 250ms var(--anim-func);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    border: none;
+    outline: none;
+    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+  
+.filter-buttton__item:not(:last-child) {
+  margin-right: 8px;
+}

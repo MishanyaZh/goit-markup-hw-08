@@ -1,0 +1,33 @@
+.logo-accent--header {
+  padding-right: 42px;
+}
+
+.logo-accent {
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+}
+
+.logo-dark {
+  color: var(--title-text-color);
+}
+
+// logo-footer
+
+.logo-accent-footer {
+  display: inline-block;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.logo-white {
+  color: var(--white-text-color);
+}

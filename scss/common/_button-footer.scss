@@ -1,0 +1,44 @@
+.button-footer {
+  display: block;
+  margin: 0 auto;
+
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  padding: 10px 62px 10px 29px;
+  border-radius: 4px;
+  transition: background-color var(--time-anim-func), color var(--time-anim-func), fill var(--time-anim-func), box-shadow var(--time-anim-func);
+
+  &:focus,
+  &:hover {
+    background-color: var(--white-text-color);
+    color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 15%);
+  }
+}
+  
+
+.button-box {
+  position: relative;
+}
+
+.button-footer__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  fill: var(--white-text-color);
+  transition: background-color var(--time-anim-func),
+    color var(--time-anim-func), fill var(--time-anim-func);
+}
+
+.button-footer:focus ~ .button-footer__icon,
+.button-footer:hover ~ .button-footer__icon {
+  fill: var(--accent-color);
+}

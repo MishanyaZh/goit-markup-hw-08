@@ -1,0 +1,52 @@
+// variables
+
+:root {
+  --accent-color: rgba(33, 150, 243, 1);
+  --title-text-color: rgba(33, 33, 33, 1);
+  --logo-text-color: rgba(0, 0, 0, 1);
+  --grey-text-color: rgba(117, 117, 117, 1);
+  --white-text-color: rgba(255, 255, 255, 1);
+
+  --footergeroy-bg-color: rgba(47, 48, 58, 1);
+  --section-bg-color: rgba(245, 244, 250, 1);
+
+  --cards-gap-porfolio: 30px;
+
+  --cards-border-portfolio: 1px solid rgba(238, 238, 238, 1);
+
+  --header-border-bottom: 1px solid rgba(236, 236, 236, 1);
+
+  --footer-social-icon-bg: rgba(255, 255, 255, 0.1);
+
+  --logo-grey-color: rgba(175, 177, 184, 1);
+
+  --anim-func: cubic-bezier(0.4, 0, 0.2, 1);
+  --time-anim-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --wot-we-do-bg: rgba(47, 48, 58, 0.8);
+
+  --hover-overlay: rgba(33, 150, 243, 0.9);
+
+  --modal-backdrop: rgba(0, 0, 0, 0.2);
+
+  --button-modal-border: 1px solid rgba(0, 0, 0, 0.1);
+
+  --border-input-mod: 1px solid rgba(33, 33, 33, 0.2);
+
+  --accent-color-mod-hov: rgba(24, 140, 232, 1);
+
+  --border-footer-input: 1px solid rgba(255, 255, 255, 0.3);
+
+  --footer-imput-placehold: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+}

@@ -1,0 +1,51 @@
+.button-modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  align-items: center;
+
+  border: var(--button-modal-border);
+  border-radius: 50%;
+  background-color: var(--white-text-color);
+
+  fill: var(--logo-text-color);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+
+  transition: fill 250ms var(--anim-func);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+
+.button-modal-send {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  padding: 10px 55px;
+  border-radius: 4px;
+
+  transition: background-color 250ms var(--anim-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-mod-hov);
+  }
+}
