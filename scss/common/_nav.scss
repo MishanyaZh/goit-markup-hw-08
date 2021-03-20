@@ -1,14 +1,14 @@
 .nav {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     align-items: center;
     padding-left: 0;
     // padding-right: 84px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     padding-right: 0;
   }
 }
@@ -55,7 +55,6 @@
 }
 
 /* animation */
-
 .nav__link::after {
   position: absolute;
   bottom: 0;
