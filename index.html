@@ -22,9 +22,16 @@
           <a class="logo-accent logo-accent--header" href="./index.html"
             >Web<span class="logo-dark">Studio</span>
           </a>
-          <svg class="heder-menu" width="40" height="40">
-            <use href="./img/symbol-defs.svg#icon-menu_40px-1"></use>
-          </svg>
+          <button
+            class="heder-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="heder-menu" width="40" height="40">
+              <use href="./img/symbol-defs.svg#icon-menu_40px-1"></use>
+            </svg>
+          </button>
+
           <ul class="nav">
             <li class="nav__item">
               <a class="nav__link current" href="./index.html">Студия</a>
@@ -521,7 +528,7 @@
     </footer>
 
     <!-- modals -->
-
+    <!--form -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-modal-close" data-modal-close>
@@ -604,7 +611,52 @@
       </div>
     </div>
 
+    <!-- Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+
+      <ul class="nav menu--visible">
+        <li class="nav__item">
+          <a class="nav__link current" href="./index.html">Студия</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Контакты</a>
+        </li>
+      </ul>
+      <ul class="contact menu--visible">
+        <li class="contact__item">
+          <a
+            class="contact__link contact__link--mail"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+
+        <li class="contact__item">
+          <a class="contact__link contact__link--tel" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+
+      <ul class="menu-social">
+        <li class="menu-social_item"></li>
+        <li class="menu-social_item"></li>
+        <li class="menu-social_item"></li>
+        <li class="menu-social_item"></li>
+      </ul>
+    </div>
+
     <!-- JS -->
+    <script src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
