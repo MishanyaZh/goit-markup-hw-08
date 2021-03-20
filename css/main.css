@@ -343,32 +343,27 @@ body {
 }
 
 .container {
+  max-width: 480px;
   min-width: 320px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px 15px;
-}
-
-@media (min-width: 480px) {
-  .container {
-    min-width: 480px;
-  }
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
 /* header */
 .header-sticky {
-  min-width: 320px;
   border-bottom: var(--header-border-bottom);
   position: -webkit-sticky;
   position: sticky;
@@ -392,7 +387,14 @@ body {
 
 @media (min-width: 768px) {
   .header {
+    max-width: 768px;
     height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    max-width: 1200px;
   }
 }
 
@@ -736,20 +738,44 @@ body {
 
 .geroy {
   background-color: var(--footergeroy-bg-color);
+  min-width: 320px;
+  max-width: 480px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media (min-width: 768px) {
+  .geroy {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .geroy {
+    max-width: 1600px;
+  }
+}
+
 .geroy__overlay {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/heroy-mobile.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/heroy-mobile.jpg");
+  height: 400px;
+  max-width: 480px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 @media (min-width: 768px) {
+  .geroy__overlay {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5))), url("../img/heroy-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("../img/heroy-tablet.jpg");
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
   .geroy__overlay {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5))), url("../img/svg_dz-4/geroy-Img-m.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("../img/svg_dz-4/geroy-Img-m.jpg");
@@ -763,7 +789,7 @@ body {
   padding-bottom: 118px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .geroy__content {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -780,7 +806,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .geroy__title {
     font-size: 44px;
     line-height: 1.4;

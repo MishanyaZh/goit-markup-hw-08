@@ -2,12 +2,20 @@
 
 .geroy {
   background-color: var(--footergeroy-bg-color);
-  // min-width: 320px;
-  // max-width: 480px;
+  min-width: 320px;
+  max-width: 480px;
   // max-width: 1600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet) {
+    max-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1600px;
+  }
 }
 
 .geroy__overlay {
@@ -17,14 +25,24 @@
     ),
     url('../img/heroy-mobile.jpg');
 
-  // height: 400px;
-  // width: 480px;
+  height: 400px;
+  max-width: 480px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.5),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url('../img/heroy-tablet.jpg');
+
+    max-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.5),
         rgba(47, 48, 58, 0.5)
@@ -40,7 +58,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -56,7 +74,7 @@
 
   margin-bottom: 30px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.4;
   }
