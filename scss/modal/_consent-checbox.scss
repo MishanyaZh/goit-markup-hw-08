@@ -32,11 +32,16 @@
   color: var(--grey-text-color);
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
+  font-size: 10px;
+  line-height: 1;
   letter-spacing: 0.03em;
 
   margin-left: 7px;
+
+  @media (min-width: 450px) {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 
   @media (min-width: $desktop) {
     font-size: 14px;

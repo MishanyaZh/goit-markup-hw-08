@@ -45,8 +45,8 @@
   opacity: 1;
   transition: opacity 250ms var(--anim-func), transform 250ms var(--anim-func);
 
-  @media (min-width: 480px) {
-    max-width: 450px;
+  @media (min-width: 450px) {
+    min-width: 450px;
     max-height: 609px;
   }
 

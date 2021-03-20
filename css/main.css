@@ -884,9 +884,9 @@ body {
   transition: opacity 250ms var(--anim-func), transform 250ms var(--anim-func), -webkit-transform 250ms var(--anim-func);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 450px) {
   .modal {
-    max-width: 450px;
+    min-width: 450px;
     max-height: 609px;
   }
 }
@@ -997,7 +997,7 @@ body {
   transition: border 250ms var(--anim-func);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 450px) {
   .form__input {
     min-width: 370px;
   }
@@ -1090,7 +1090,7 @@ body {
   transition: border 250ms var(--anim-func);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 450px) {
   .form__coment-content {
     min-width: 370px;
   }
@@ -1144,10 +1144,17 @@ body {
 .consent__text {
   color: var(--grey-text-color);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
+  font-size: 10px;
+  line-height: 1;
   letter-spacing: 0.03em;
   margin-left: 7px;
+}
+
+@media (min-width: 450px) {
+  .consent__text {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
 
 @media (min-width: 1200px) {
