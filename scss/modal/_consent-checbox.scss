@@ -32,11 +32,16 @@
   color: var(--grey-text-color);
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 
   margin-left: 7px;
+
+  @media (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .consent__link {

@@ -20,7 +20,7 @@
 }
 
 .form__input {
-  width: 448px;
+  max-width: 280px;
   height: 40px;
 
   padding-left: 42px;
@@ -29,6 +29,14 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: border 250ms var(--anim-func);
+
+  @media (min-width: 480px) {
+    min-width: 370px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 448px;
+  }
 
   &:focus,
   &:hover {
@@ -70,13 +78,14 @@
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.01em;
-  
+
     color: rgba(117, 117, 117, 0.5);
   }
 }
 
 .form__coment-content {
-  width: 448px;
+  max-width: 280px;
+  // width: 448px;
   height: 120px;
   padding: 12px 16px;
 
@@ -86,6 +95,18 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: border 250ms var(--anim-func);
+
+  @media (min-width: 480px) {
+    min-width: 370px;
+  }
+
+  // @media (min-width: $tablet) {
+  //   min-width: 370px;
+  // }
+
+  @media (min-width: $desktop) {
+    min-width: 448px;
+  }
 
   &:focus,
   &:hover {
