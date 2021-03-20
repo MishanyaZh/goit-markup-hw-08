@@ -2,6 +2,7 @@
 
 .fatyres {
   padding-top: 60px;
+  padding-bottom: 60px;
 
   @media (min-width: $tablet) {
     padding-top: 92px;
@@ -31,8 +32,10 @@
 }
 
 .fatyres__box-icon {
-  max-width: 450px;
-  max-height: 120px;
+  max-width: 100%;
+  // max-height: 120px;
+
+  padding: 25px;
 
   display: flex;
   justify-content: center;
@@ -55,8 +58,9 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   margin-bottom: 10px;
+
+  text-align: center;
 }
 
 .fatures__text {
