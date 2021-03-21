@@ -1546,6 +1546,7 @@ body {
 }
 
 .team-list__thumb {
+  margin: 0 auto;
   max-width: 450px;
 }
 

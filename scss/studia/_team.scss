@@ -51,6 +51,7 @@
 }
 
 .team-list__thumb {
+  margin: 0 auto;
   max-width: 450px;
   @media (min-width: $tablet) {
     max-width: 354px;
