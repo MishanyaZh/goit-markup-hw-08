@@ -30,13 +30,17 @@
 
 .logo-accent-footer {
   display: inline-block;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
   color: var(--accent-color);
   margin-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    font-size: 26px;
+  }
 }
 
 .logo-white {
