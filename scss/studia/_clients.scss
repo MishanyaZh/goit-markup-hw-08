@@ -1,41 +1,75 @@
-// /* clients */
+/* clients */
 
-// .clients {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-// .clients-list {
-//   display: flex;
-// }
+  @media (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
-// .clients-list__box:not(:last-child) {
-//   margin-right: 30px;
-// }
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-// .clients-list__link {
-//   fill: var(--logo-grey-color);
+  margin-left: calc(-1 * var(--cards-gap-porfolio));
+  margin-top: calc(-1 * var(--cards-gap-porfolio));
+}
 
-//   width: 170px;
-//   height: 90px;
+.clients-list__box {
+  flex-basis: calc(100% / 2 - var(--cards-gap-porfolio));
+  margin-left: var(--cards-gap-porfolio);
+  margin-top: var(--cards-gap-porfolio);
 
-//   border: 1px solid #afb1b8;
-//   box-sizing: border-box;
-//   border-radius: 4px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+  @media (min-width: $tablet) {
+    flex-basis: calc(100% / 3 - var(--cards-gap-porfolio));
+    margin-left: var(--cards-gap-porfolio);
+    margin-top: var(--cards-gap-porfolio);
+  }
 
-//   transition: fill 250ms var(--anim-func), border 250ms var(--anim-func);
+  @media (min-width: $desktop) {
+    flex-basis: calc(100% / 6 - var(--cards-gap-porfolio));
+    margin-left: var(--cards-gap-porfolio);
+    margin-top: var(--cards-gap-porfolio);
+  }
 
-//   &:hover {
-//     fill: var(--accent-color);
-//     border: 1px solid var(--accent-color);
-//   }
+  //   &:not(:last-child) {
+  //     margin-right: 30px;
 
-//   &:focus {
-//     fill: var(--accent-color);
-//     border: 1px solid var(--accent-color);
-//     outline: none;
-//   }
-// }
+  //     @media (min-width: $tablet) {
+  //       margin-right: 0;
+  //     }
+  //   }
+}
+
+.clients-list__link {
+  fill: var(--logo-grey-color);
+
+  //   width: 170px;
+  //   width: 226px;
+  //   width: 210px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: fill 250ms var(--anim-func), border 250ms var(--anim-func);
+
+  &:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+}

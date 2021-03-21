@@ -1589,6 +1589,88 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* clients */
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: calc(-1 * var(--cards-gap-porfolio));
+  margin-top: calc(-1 * var(--cards-gap-porfolio));
+}
+
+.clients-list__box {
+  -ms-flex-preferred-size: calc(100% / 2 - var(--cards-gap-porfolio));
+      flex-basis: calc(100% / 2 - var(--cards-gap-porfolio));
+  margin-left: var(--cards-gap-porfolio);
+  margin-top: var(--cards-gap-porfolio);
+}
+
+@media (min-width: 768px) {
+  .clients-list__box {
+    -ms-flex-preferred-size: calc(100% / 3 - var(--cards-gap-porfolio));
+        flex-basis: calc(100% / 3 - var(--cards-gap-porfolio));
+    margin-left: var(--cards-gap-porfolio);
+    margin-top: var(--cards-gap-porfolio);
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-list__box {
+    -ms-flex-preferred-size: calc(100% / 6 - var(--cards-gap-porfolio));
+        flex-basis: calc(100% / 6 - var(--cards-gap-porfolio));
+    margin-left: var(--cards-gap-porfolio);
+    margin-top: var(--cards-gap-porfolio);
+  }
+}
+
+.clients-list__link {
+  fill: var(--logo-grey-color);
+  height: 90px;
+  border: 1px solid #afb1b8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: fill 250ms var(--anim-func), border 250ms var(--anim-func);
+  transition: fill 250ms var(--anim-func), border 250ms var(--anim-func);
+}
+
+.clients-list__link:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-list__link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
 /* filter-buttton */
 .filter-buttton {
   padding-top: 94px;
