@@ -1548,6 +1548,7 @@ body {
 .team-list__thumb {
   margin: 0 auto;
   max-width: 450px;
+  max-height: 460px;
 }
 
 @media (min-width: 768px) {
