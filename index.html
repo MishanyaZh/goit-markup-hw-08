@@ -200,7 +200,14 @@
 
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="img/img1.jpg" alt="Игорь" width="270" />
+              <div class="team-list__thumb">
+                <img
+                  src="img/img1.jpg"
+                  alt="Игорь"
+                  srcset="img/img1@2x.jpg 2x"
+                />
+              </div>
+
               <div class="team-list__content">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__profession">Product Designer</p>
@@ -247,7 +254,14 @@
             </li>
 
             <li class="team-list__item">
-              <img src="img/img2.jpg" alt="Ольга" width="270" />
+              <div class="team-list__thumb">
+                <img
+                  src="img/img2.jpg"
+                  alt="Ольга"
+                  srcset="img/img2@2x.jpg 2x"
+                />
+              </div>
+
               <div class="team-list__content">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__profession">Frontend Developer</p>
@@ -293,7 +307,13 @@
             </li>
 
             <li class="team-list__item">
-              <img src="img/img3.jpg" alt="Николай" width="270" />
+              <div class="team-list__thumb">
+                <img
+                  src="img/img3.jpg"
+                  alt="Николай"
+                  srcset="img/img3@2x.jpg 2x"
+                />
+              </div>
               <div class="team-list__content">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__profession">Marketing</p>
@@ -339,7 +359,13 @@
             </li>
 
             <li class="team-list__item">
-              <img src="img/img4.jpg" alt="Михаил" width="270" />
+              <div class="team-list__thumb">
+                <img
+                  src="img/img4.jpg"
+                  alt="Михаил"
+                  srcset="img/img4@2x.jpg 2x"
+                />
+              </div>
               <div class="team-list__content">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__profession">UI Designer</p>
@@ -618,49 +644,52 @@
           <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
         </svg>
       </button>
+      <div class="menu">
+        <ul class="nav menu--visible">
+          <li class="nav__item">
+            <a class="nav__link current" href="./index.html">Студия</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="contact menu--visible">
+          <li class="contact__item">
+            <a
+              class="contact__link contact__link--mail"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a
+              class="contact__link contact__link--tel"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
 
-      <ul class="nav menu--visible">
-        <li class="nav__item">
-          <a class="nav__link current" href="./index.html">Студия</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="">Контакты</a>
-        </li>
-      </ul>
-      <ul class="contact menu--visible">
-        <li class="contact__item">
-          <a
-            class="contact__link contact__link--mail"
-            href="mailto:info@devstudio.com"
-          >
-            info@devstudio.com
-          </a>
-        </li>
-
-        <li class="contact__item">
-          <a class="contact__link contact__link--tel" href="tel:+380961111111">
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-
-      <ul class="menu-social">
-        <li class="menu-social_item after">
-          <a class="menu-social_link" href="#">Instagram</a>
-        </li>
-        <li class="menu-social_item after">
-          <a class="menu-social_link" href="#">Twitter</a>
-        </li>
-        <li class="menu-social_item after">
-          <a class="menu-social_link" href="#">Facebook</a>
-        </li>
-        <li class="menu-social_item">
-          <a class="menu-social_link" href="#">LinkedIn</a>
-        </li>
-      </ul>
+        <ul class="menu-social">
+          <li class="menu-social_item after">
+            <a class="menu-social_link" href="#">Instagram</a>
+          </li>
+          <li class="menu-social_item after">
+            <a class="menu-social_link" href="#">Twitter</a>
+          </li>
+          <li class="menu-social_item after">
+            <a class="menu-social_link" href="#">Facebook</a>
+          </li>
+          <li class="menu-social_item">
+            <a class="menu-social_link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- JS -->

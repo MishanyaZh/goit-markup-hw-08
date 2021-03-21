@@ -67,3 +67,19 @@ body {
     max-width: 1200px;
   }
 }
+
+.titllesecond {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
