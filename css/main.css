@@ -1749,18 +1749,34 @@ body {
 
 /* filter-buttton */
 .filter-buttton {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  .filter-buttton {
+    padding-top: 94px;
+  }
 }
 
 .filter-buttton__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  .filter-buttton__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .button {
@@ -1791,11 +1807,12 @@ body {
 
 .filter-buttton__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 /* cards-list */
 .cards-list__container {
-  margin-top: 50px;
+  margin-top: 35px;
   padding-bottom: 94px;
 }
 
@@ -1812,11 +1829,31 @@ body {
 }
 
 .cards-list__item {
-  -ms-flex-preferred-size: calc(100% / 3 - var(--cards-gap-porfolio));
-      flex-basis: calc(100% / 3 - var(--cards-gap-porfolio));
+  -ms-flex-preferred-size: calc(100% / 1 - var(--cards-gap-porfolio));
+      flex-basis: calc(100% / 1 - var(--cards-gap-porfolio));
   margin-left: var(--cards-gap-porfolio);
   margin-top: var(--cards-gap-porfolio);
   outline: var(--cards-border-portfolio);
+}
+
+@media (min-width: 768px) {
+  .cards-list__item {
+    -ms-flex-preferred-size: calc(100% / 2 - var(--cards-gap-porfolio));
+        flex-basis: calc(100% / 2 - var(--cards-gap-porfolio));
+    margin-left: var(--cards-gap-porfolio);
+    margin-top: var(--cards-gap-porfolio);
+    outline: var(--cards-border-portfolio);
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards-list__item {
+    -ms-flex-preferred-size: calc(100% / 3 - var(--cards-gap-porfolio));
+        flex-basis: calc(100% / 3 - var(--cards-gap-porfolio));
+    margin-left: var(--cards-gap-porfolio);
+    margin-top: var(--cards-gap-porfolio);
+    outline: var(--cards-border-portfolio);
+  }
 }
 
 .cards-list__link {
@@ -1843,6 +1880,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   padding: 63px 24px;
   background: var(--hover-overlay);
   -webkit-transform: translateY(100%);

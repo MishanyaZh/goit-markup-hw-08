@@ -1,7 +1,7 @@
 /* cards-list */
 
 .cards-list__container {
-  margin-top: 50px;
+  margin-top: 35px;
   padding-bottom: 94px;
 }
 
@@ -17,10 +17,24 @@
 }
 
 .cards-list__item {
-  flex-basis: calc(100% / 3 - var(--cards-gap-porfolio));
+  flex-basis: calc(100% / 1 - var(--cards-gap-porfolio));
   margin-left: var(--cards-gap-porfolio);
   margin-top: var(--cards-gap-porfolio);
   outline: var(--cards-border-portfolio);
+
+  @media (min-width: $tablet) {
+    flex-basis: calc(100% / 2 - var(--cards-gap-porfolio));
+    margin-left: var(--cards-gap-porfolio);
+    margin-top: var(--cards-gap-porfolio);
+    outline: var(--cards-border-portfolio);
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: calc(100% / 3 - var(--cards-gap-porfolio));
+    margin-left: var(--cards-gap-porfolio);
+    margin-top: var(--cards-gap-porfolio);
+    outline: var(--cards-border-portfolio);
+  }
 }
 
 .cards-list__link {
@@ -35,7 +49,6 @@
   }
 }
 
-
 .cards-list__overlay-box {
   position: relative;
 
@@ -48,7 +61,7 @@
   left: 0;
 
   width: 100%;
-  // height: 100%;
+  height: 100%;
   padding: 63px 24px;
 
   background: var(--hover-overlay);
