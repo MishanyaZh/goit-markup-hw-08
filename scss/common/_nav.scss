@@ -75,3 +75,10 @@
 .nav__link:focus::after {
   opacity: 1;
 }
+
+// mobile-menu
+// otkl linia na mob menu
+.menu--visible .nav__link.current::after,
+.menu--visible .nav__link::after {
+  display: none;
+}
