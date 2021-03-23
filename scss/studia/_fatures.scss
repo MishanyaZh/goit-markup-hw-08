@@ -25,6 +25,14 @@
 .fatyres__item {
   height: auto;
 
+  @media (max-width: 779px) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   @media (min-width: $tablet) {
     flex-basis: calc(100% / 2 - var(--cards-gap-porfolio));
     margin-left: var(--cards-gap-porfolio);

@@ -1451,6 +1451,15 @@ body {
   height: auto;
 }
 
+@media (max-width: 779px) {
+  .fatyres__item {
+    margin-bottom: 30px;
+  }
+  .fatyres__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .fatyres__item {
     -ms-flex-preferred-size: calc(100% / 2 - var(--cards-gap-porfolio));
@@ -1766,7 +1775,7 @@ body {
       flex-wrap: wrap;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .filter-buttton__list {
     display: -webkit-box;
     display: -ms-flexbox;
