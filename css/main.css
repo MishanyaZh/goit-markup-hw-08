@@ -1970,9 +1970,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2002,6 +1999,13 @@ body {
   fill: var(--accent-color);
 }
 
+.menu-bottom {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 48px;
+  padding-left: 25px;
+}
+
 .menu-container .menu-toggle-close {
   position: absolute;
   top: 20px;
@@ -2014,36 +2018,22 @@ body {
   display: block;
 }
 
-.menu-container .nav {
-  padding-top: 18px;
-  padding-left: 10px;
-}
-
-.menu-container .nav__item {
-  padding-right: 0;
+.nav.menu--visible {
+  padding-top: 33px;
+  padding-left: 25px;
 }
 
 .nav__item.menu--visible {
   margin-bottom: 32px;
+  padding-right: 0;
 }
 
-.menu-container .nav__link {
+.nav__link.menu--visible {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   text-align: center;
   letter-spacing: 0.02em;
-}
-
-.menu-container .contact {
-  position: absolute;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  padding-left: 10px;
-  margin-bottom: 102px;
-  bottom: 0;
 }
 
 .contact__item.menu--visible {
@@ -2059,6 +2049,12 @@ body {
   color: var(--accent-color);
 }
 
+@media (max-width: 410px) {
+  .contact__link--tel {
+    font-size: 30px;
+  }
+}
+
 .contact__link--mail {
   font-weight: 500;
   font-size: 24px;
@@ -2068,19 +2064,12 @@ body {
 }
 
 .menu-social {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  padding-bottom: 18px;
-  margin-bottom: 18px;
-  padding-left: 10px;
-  bottom: 0;
+  margin-top: 32px;
 }
 
 .menu-social_item:not(:last-child) {
@@ -2097,5 +2086,11 @@ body {
   line-height: 1.2px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+@media (max-width: 410px) {
+  .menu-social_link {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
